@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Ucc;
-
 
 final class Session
 {

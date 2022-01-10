@@ -1,8 +1,6 @@
 <?php
 
-
 namespace Ucc\Http;
-
 
 trait JsonResponseTrait
 {
@@ -12,6 +10,7 @@ trait JsonResponseTrait
         header('Session-Id: ' . session_id());
         header('Content-Type: application/json;charset=utf-8');
         $body = json_encode($data);
+        echo($body);
         if (json_last_error() === JSON_ERROR_NONE) {
             return true;
         }

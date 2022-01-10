@@ -1,17 +1,15 @@
 <?php
 
-
 namespace Ucc\Models;
-
 
 use JsonSerializable;
 
 class Question implements JsonSerializable
 {
-    private int $id;
+    public int $id;
     private string $question;
     private array $possibleAnswers;
-    private string $correctAnswerr;
+    private string $correctAnswer;
     private int $points;
 
     public function getId(): int

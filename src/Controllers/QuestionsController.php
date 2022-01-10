@@ -1,19 +1,20 @@
 <?php
 
-
 namespace Ucc\Controllers;
-
 
 use Ucc\Services\QuestionService;
 use Ucc\Session;
+use Ucc\Http\JsonResponseTrait;
 
-class QuestionsController
+class QuestionsController extends Controller
 {
+    use JsonResponseTrait;
+
     private QuestionService $questionService;
 
     public function __construct(QuestionService $questionService)
     {
-                    parent::__construct();
+        parent::__construct();
         $this->questionService = $questionService;
     }
 
@@ -27,13 +28,14 @@ class QuestionsController
         Session::set('name', $name);
         Session::set('questionCount', 1);
         //TODO Get first question for user
-        $question = null;
+        $question = $this->questionService->getRandomQuestions();
 
-        return    $this->json(['question' => $question], 201);
+        return $this->json(['question' => $question], 201);
     }
 
-    public function answerQuestion(int $id): bool {
-        if ( Session::get('name') === null ) {
+    public function answerQuestion(int $id): bool
+    {
+        if (Session::get('name') === null) {
             return $this->json('You must first begin a game', 400);
         }
 
