@@ -1,0 +1,25 @@
+{
+  "name": "ucc/questions-game",
+  "description": "A coding challenge for Upstack using a questions game",
+  "version": "1.0",
+  "type": "project",
+  "readme": "README.md",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Konstantinos Thermos",
+      "email": "konstantinos@upstack.com"
+    }
+  ],
+  "require": {
+    "php-di/php-di": "^6.0",
+    "nikic/fast-route": "^1.3",
+    "kherge/json": "^3.0",
+    "netresearch/jsonmapper": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ucc\\": "src/"
+    }
+  }
+}

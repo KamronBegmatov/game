@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "question": "What colour is the sky?",
+    "possibleAnswers": [
+      "Yellow",
+      "Green",
+      "Blue"
+    ],
+    "correctAnswer": "Blue",
+    "points": 1
+  },
+  {
+    "id": 2,
+    "question": "In which continent does Greece belong?",
+    "possibleAnswers": [
+      "Europe",
+      "North America",
+      "Asia"
+    ],
+    "correctAnswer": "Europe",
+    "points": 3
+  },
+  {
+    "id": 3,
+    "question": "what is the airspeed velocity of an unladen swallow?",
+    "possibleAnswers": [
+      "100 km/h",
+      "The European or the African swallow?",
+      "I don't know"
+    ],
+    "correctAnswer": "The European or the African swallow?",
+    "points": 4
+  },
+  {
+    "id": 4,
+    "question": "What is the answer to life, the universe and everything?",
+    "possibleAnswers": [
+      "42",
+      "Noone knows",
+      "Huh?"
+    ],
+    "correctAnswer": "42",
+    "points": 4
+  },
+  {
+    "id": 5,
+    "question": "Why did the chicken cross the road?",
+    "possibleAnswers": [
+      "It didn't",
+      "To get to the other side",
+      "To prove he's not chicken"
+    ],
+    "correctAnswer": "To get to the other side",
+    "points": 2
+  },
+  {
+    "id": 6,
+    "question": "How many planets are there in the solar system?",
+    "possibleAnswers": [
+      "8 (Pluto is not a planet)",
+      "Who cares?",
+      "9 (Pluto IS a planet)"
+    ],
+    "correctAnswer": "9 (Pluto IS a planet)",
+    "points": 2
+  },
+  {
+    "id": 7,
+    "question": "Where do babies come from?",
+    "possibleAnswers": [
+      "A stork brings them",
+      "The North Pole",
+      "Mommy"
+    ],
+    "correctAnswer": "Mommy",
+    "points": 1
+  },
+  {
+    "id": 8,
+    "question": "How many months have 28 days?",
+    "possibleAnswers": [
+      "All of them",
+      "One",
+      "None"
+    ],
+    "correctAnswer": "All of them",
+    "points": 2
+  }
+]
